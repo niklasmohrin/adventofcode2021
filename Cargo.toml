@@ -1,0 +1,13 @@
+[package]
+name = "adventofcode2021"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+counter = "0.5.2"
+derive_more = "0.99.17"
+itertools = "0.10.3"
+nalgebra = "0.29.0"
+serde = "1.0.132"
+serde_derive = "1.0.132"
+serde_scan = "0.4.1"
