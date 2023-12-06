@@ -1,5 +1,3 @@
-#![feature(stdio_locked)]
-
 use std::{
     cmp,
     collections::HashMap,
@@ -9,7 +7,8 @@ use std::{
 use itertools::Itertools;
 
 fn main() {
-    let positions: [u8; 2] = io::stdin_locked()
+    let positions: [u8; 2] = io::stdin()
+        .lock()
         .lines()
         .map(|line| {
             line.unwrap()
